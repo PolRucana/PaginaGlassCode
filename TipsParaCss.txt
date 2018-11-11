@@ -1,0 +1,27 @@
+Tip1: CENTRAR IMAGEN DE MANERA VERTICAL HACIA LA IZQUIERDA 
+Si queremos que un texto o un contenedor que contenga texto, este centrado
+de manera vertical hacia el lado izquierdo dentro de un contenedor y se
+mantenga siempre al centro aun reduciendo el tamaño de la pantalla.
+Colocar el siguiente codigo:
+
+".contenedor" es la clase donde se encuentra mi texto y la estoy centrando 
+en otro contenedor fuera de el.
+
+.contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+Tip2: ADAPTAR UNA IMAGEN EM CIERTO TAMAÑO EN CUALQUIER TAMAÑO DE PANTALLA
+Si tenenmos una imagen que es mas grande de lo que nosotros tenenmos
+y queremos adaptarlo ha cierto tamaño para que se vea en cualquier 
+tamaño de pantalla.
+Colocar el siguiente codigo:
+
+img{
+    width: 100%;
+    max-width: 280px;
+}
+

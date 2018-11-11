@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
+.servicio{
+    margin-top: 60px;
+}
+
+.servicio h3{
+    text-align: center;
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding-top: 55px;
+    background: rgba(5, 78, 212, 0.8);
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+ 
+}
+
+.contenedorserv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+article{
+    position: relative;
+    margin: 50px;
+    text-align: center;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+.izquierda{
+    margin-right: 100px;
+    /*border:1px solid black;*/
+}
+
+.centro{
+    /*border:1px solid black;*/
+}
+
+.derecha{
+    margin-left: 100px;
+    /*border:1px solid black;*/
+}
+
+article img{
+    width: 90%;
+    max-width: 280px;
+}
+
+article h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    background: rgba(11, 47, 167, 0.7);
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    width: 60%;
+    transition: all 0.8s;
+}
+
+.efecto{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    transform: translate(-240px,240px);
+    transition: all 0.8s;
+
+    background: rgba(73,155,234,1);
+    background: -moz-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(33,124,229,0.26) 66%, rgba(32,124,229,0.26) 67%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(66%, rgba(33,124,229,0.26)), color-stop(67%, rgba(32,124,229,0.26)));
+    background: -webkit-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(33,124,229,0.26) 66%, rgba(32,124,229,0.26) 67%);
+    background: -o-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(33,124,229,0.26) 66%, rgba(32,124,229,0.26) 67%);
+    background: -ms-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(33,124,229,0.26) 66%, rgba(32,124,229,0.26) 67%);
+    background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(33,124,229,0.26) 66%, rgba(32,124,229,0.26) 67%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+
+    border-radius: 100px;
+}
+
+article:hover .efecto{
+    transform: translate(-95px,95px);
+    transition: all 0.5s;
+    background: rgba(11, 47, 167, 0.7);
+}
+
+article:hover h4{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.detalles{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(10%,-15%);
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.8s;
+    color: white;
+}
+
+article:hover .detalles{
+    opacity: 1;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+@media screen and (max-width:1200px){
+    .derecha{
+        margin: 50px;
+    }
+    .izquierda{
+        margin: 50px;
+    }
+}
+

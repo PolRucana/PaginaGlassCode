@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+
+    <!--Slider-->
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/slider/jquery-3.1.0.min.js"></script>
+    <script src="js/slider/main.js"></script>
+    <!--Servicio-->
+    <link rel="stylesheet" href="css/servicio.css">
+    <title>Glass Code</title>
+
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(window).on('scroll',function(){
+            if ($(window).scrollTop()) {
+                    $('header').addClass('black');
+            } 
+            else {
+                    $('header').removeClass('black');
+            }
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo wow bounceInRight">
+                    <img class="milogo" src="img/logo.png" alt="" width="40px" height="40px">
+                    <h1>Glass Code</h1>
+            </div>
+            
+            <input type="checkbox" name="" id="menubar">
+            <label for="menubar"><img src="img/m2.png" alt=""></label>
+            <nav class="menu">
+                <a href="">Home</a>
+                <a href="">Nosotros</a>
+                <a href="">Servicios</a>
+                <a href="">Ayuda</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slideshow">
+		<ul class="slider">
+			<li>
+				<img src="fondo/11.jpg" alt="">
+				<section class="caption">
+                    <div class="texto wow bounceInDown">
+					    <h1>SOMOS GLASS CODE</h1>
+					    <p>Diseño sensacional, creativo y genial</p>
+                    </div>
+                </section>
+			</li>
+			<li>
+				<img src="fondo/22.jpg" alt="">
+				<section class="caption">
+                    <div class="texto">
+					    <h1>DISEÑO WEB</h1>
+					    <p>Las mejores herramientas para diseñar tu pagina web</p>
+                    </div>
+                </section>
+			</li>
+			<li>
+				<img src="fondo/33.jpg" alt="">
+				<section class="caption">
+                    <div class="texto">
+                        <h1>SOPORTE TECNICO</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p>
+                    </div>                   
+                </section>
+			</li>
+			<li>
+				<img src="fondo/44.jpg" alt="">
+				<section class="caption">
+                    <div class="texto">
+                        <h1>Lorem ipsum 2</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p>
+                    </div>
+				</section>
+			</li>
+		</ul>
+
+		<ol class="pagination">
+			
+		</ol>
+	
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+    </div>
+    
+    <section class="servicio">
+        <h3>Servicios</h3>
+        <div class="contenedorserv">
+            <article class="izquierda wow bounceInRight">
+                <img src="img/s1.png" alt="">
+                <h4>Desarrollo Web</h4>
+                <div class="efecto"></div>
+                <div class="detalles">
+                    <li>detalle 1</li>
+                    <li>detalle 2</li>
+                    <li>detalle 3</li>
+                    <li>detalle 4</li>
+                </div>
+            </article>
+            <article class="centro wow bounceInUp">
+                <img src="img/s3.png" alt="">
+                <h4>Soporte Tecnico</h4>
+                <div class="efecto"></div>
+                <div class="detalles">
+                    <li>detalle 1</li>
+                    <li>detalle 2</li>
+                    <li>detalle 3</li>
+                    <li>detalle 4</li>
+                </div>
+            </article>
+            <article class="derecha wow bounceInLeft">
+                <img src="img/s5.png" alt="">
+                <h4>Tecnologias de Informacion</h4>
+                <div class="efecto"></div>
+                <div class="detalles">
+                    <li>detalle 1</li>
+                    <li>detalle 2</li>
+                    <li>detalle 3</li>
+                    <li>detalle 4</li>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>
